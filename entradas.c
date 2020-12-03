@@ -10,6 +10,7 @@ int main () {
    imprime.active = FALSE;
 
 
+   printf("hi");
    return EXIT_SUCCESS;
 }
 
