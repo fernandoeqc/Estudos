@@ -1,0 +1,1 @@
+Repositório para estudo pessoa de linguagem C e git

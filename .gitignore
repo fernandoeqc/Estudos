@@ -1,2 +1,8 @@
+#ignora tudo
+*
+
 #executaveis
-*.exe
+!*.c
+!*.txt
+!*.md
+
