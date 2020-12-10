@@ -18,6 +18,9 @@ int main () {
    addTask(&imprime);
 
    runTasks();
+
+   system("pause");
+   
    return EXIT_SUCCESS;
 }
 
