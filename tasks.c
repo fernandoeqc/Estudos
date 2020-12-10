@@ -1,3 +1,13 @@
+#ifdef _WIN32
+   #include <windows.h>
+   void
+   sleep (unsigned int millisec) {
+      Sleep (millisec);
+   }
+#else 
+   #include <unistd.h>
+#endif
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -17,7 +27,10 @@ int main () {
    
    addTask(&imprime);
 
+   
    runTasks();
+   
+
 
    return EXIT_SUCCESS;
 }
