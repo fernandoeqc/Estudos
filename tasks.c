@@ -18,7 +18,13 @@ int main () {
    addTask(&imprime);
 
    runTasks();
+<<<<<<< HEAD
    
+=======
+
+   system("pause");
+
+>>>>>>> b9bbe772dda466a6bfcf805da1884a397f5bb83d
    return EXIT_SUCCESS;
 }
 
