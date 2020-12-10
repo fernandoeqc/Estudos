@@ -4,7 +4,7 @@
 #include "tasks.h"
 
 void funcao1 () {
-   printf("Esta e a funcao 1");
+   printf("Esta e a funcao 1\n");
 }
 
 int main () {
@@ -18,8 +18,6 @@ int main () {
    addTask(&imprime);
 
    runTasks();
-
-   system("pause");
    
    return EXIT_SUCCESS;
 }
