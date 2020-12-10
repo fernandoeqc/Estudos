@@ -4,7 +4,7 @@
 #include "tasks.h"
 
 void funcao1 () {
-   printf("Esta e a funcao 1");
+   printf("dentro da func1");
 }
 
 int main () {
@@ -20,7 +20,7 @@ int main () {
    runTasks();
 
    system("pause");
-   
+
    return EXIT_SUCCESS;
 }
 
