@@ -1,11 +1,13 @@
 #ifdef _WIN32
    #include <windows.h>
    void
-   sleep (unsigned int millisec) {
+   delay (unsigned int millisec) {
       Sleep (millisec);
    }
 #else 
    #include <unistd.h>
+
+
 #endif
 
 #include <stdio.h>
@@ -27,10 +29,10 @@ int main () {
    
    addTask(&imprime);
 
-   
-   runTasks();
-   
-
+   while (TRUE) {
+      runTasks();
+      delay(1000);
+   }
 
    return EXIT_SUCCESS;
 }
