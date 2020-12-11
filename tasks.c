@@ -34,14 +34,12 @@ int main () {
 
    printf("inicio\n");
 
-   delay(1000);
-   printf("inicio\n");
-
    addTask(&imprime);
 
-   //while (TRUE) {
-   runTasks();
-   //}
+   while (TRUE) {
+      runTasks();
+      delay(1000);
+   }
 
    return EXIT_SUCCESS;
 }
