@@ -20,8 +20,14 @@ void delay(int sleepMs)
 #include <stdlib.h>
 #include <string.h>
 #include "tasks.h"
+void
+funcaoAuxiliar() {
+   printf("FUNCAO AUXILIAR ATIVADA\n");
+   printf("conteudo de novo commit\n");
+}
 
-void funcao1 () {
+void
+funcao1 () {
    printf("Esta e a funcao 1\n");
 }
 
@@ -32,9 +38,16 @@ int main () {
    imprime.sec = 0;
    imprime.func_time = funcao1;
 
-   printf("inicio\n");
 
+   static taskFunc aux;
+   aux.active = TRUE;
+   aux.count_sec = 0;
+   aux.sec = 5;
+   aux.func_time = funcaoAuxiliar;
+
+   
    addTask(&imprime);
+   addTask(&aux);
 
    while (TRUE) {
       runTasks();
