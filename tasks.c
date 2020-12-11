@@ -1,14 +1,20 @@
 #ifdef _WIN32
    #include <windows.h>
-   void
-   delay (unsigned int millisec) {
-      Sleep (millisec);
-   }
-#else 
+#else
    #include <unistd.h>
-
-
 #endif
+
+
+void delay(int sleepMs)
+{
+#ifdef _WIN32
+    Sleep(sleepMs);
+#else
+    usleep(sleepMs * 1000);   // usleep takes sleep time in us (1 millionth of a second)
+#endif
+
+}
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,13 +32,16 @@ int main () {
    imprime.sec = 0;
    imprime.func_time = funcao1;
 
-   
+   printf("inicio\n");
+
+   delay(1000);
+   printf("inicio\n");
+
    addTask(&imprime);
 
-   while (TRUE) {
-      runTasks();
-      delay(1000);
-   }
+   //while (TRUE) {
+   runTasks();
+   //}
 
    return EXIT_SUCCESS;
 }

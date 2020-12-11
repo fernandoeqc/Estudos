@@ -1,4 +1,6 @@
 #define TASK_LENGHT 5
+#define TRUE 1
+#define FALSE 0
 
 static char number_task = 0;
 
