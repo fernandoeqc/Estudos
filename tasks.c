@@ -20,8 +20,16 @@ int main () {
    imprime.sec = 0;
    imprime.func_time = funcao1;
 
+
+   static taskFunc aux;
+   aux.active = TRUE;
+   aux.count_sec = 0;
+   aux.sec = 0;
+   aux.func_time = funcaoAuxiliar;
+
    
    addTask(&imprime);
+   addTask(&aux);
 
    runTasks();
 
