@@ -1,12 +1,4 @@
 #ignora 
 *.json
 *.exe
-
-#executaveis
-!*.c
-!*.h
-!*.txt
-!*.md
-
-!/C_CPP
-!/Jav
+*.out

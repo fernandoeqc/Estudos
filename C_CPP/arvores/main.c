@@ -20,7 +20,8 @@ int main ()
     insertNode(&n1, 19);
     showTree(n1);
 
-    printf("tree: %u", isEmptyTree(n1));
+    printf("tree: %u \n", isEmptyTree(n1));
 
     return 0;
 }
+
