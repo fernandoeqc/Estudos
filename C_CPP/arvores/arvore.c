@@ -51,7 +51,7 @@ void showTree(Node *tree)
 
 // aula estacio
 void pre_ordem ( Node *ptr ) {
-	printf ( ptr -> content ); //visita o nó
+	printf ("%u",ptr->content ); //visita o nó
 	if (ptr -> child_left != NULL)
 		pre_ordem ( ptr -> child_left ); //percorre recursivamente em pré-ordem a subárvore esquerda
 	if (ptr -> child_right != NULL)
