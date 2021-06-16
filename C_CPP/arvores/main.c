@@ -12,15 +12,16 @@ int main ()
     Node *n2 = createNode();
 
     getNewNode();
-    printf("len: %lu \n", sizeof(*n1));
-  /*   insertNode(&n1, 22);
+    insertNode(&n1, 22);
+  /*
     insertNode(&n1, 15);
     insertNode(&n1, 44);
     insertNode(&n1, 18);
     insertNode(&n1, 66);
     insertNode(&n1, 38);
     insertNode(&n1, 19);
-    showTree(n1); */
+  */
+    showTree(n1); 
 
     printf("tree: %u \n", isEmptyTree(n1));
 

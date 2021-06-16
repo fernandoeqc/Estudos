@@ -2,10 +2,12 @@
 
 void getNewNode()
 {
+    Node *node = createNode();
     int num;
     scanf("%u", &num);
     printf("O numero digitado foi: %u \n", num);
 
+    insertNode(&node, num);
 }
 
 
@@ -18,7 +20,7 @@ int insertNode(Node **parent_node, int new_value)
 {
     if (*parent_node == NULL)
     {
-        printf("esta vazio\n");
+        printf("insere aqui\n");
         *parent_node = (Node *)malloc(sizeof(Node));
         (*parent_node)->child_right = NULL;
         (*parent_node)->child_left = NULL;
