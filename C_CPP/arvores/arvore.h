@@ -12,6 +12,7 @@ typedef struct node
     struct node * child_right;
 }Node;
 
+void getNewNode();
 extern Node * createNode();
 extern int insertNode(Node **parent_node, int new_value);
 bool isEmptyTree(Node *tree);

@@ -11,7 +11,8 @@ int main ()
     Node *n1 = createNode();
     Node *n2 = createNode();
 
-    printf("len: %u", sizeof(*n1));
+    getNewNode();
+    printf("len: %lu \n", sizeof(*n1));
   /*   insertNode(&n1, 22);
     insertNode(&n1, 15);
     insertNode(&n1, 44);

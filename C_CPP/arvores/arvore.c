@@ -1,5 +1,14 @@
 #include "arvore.h"
 
+void getNewNode()
+{
+    int num;
+    scanf("%u", &num);
+    printf("O numero digitado foi: %u \n", num);
+
+}
+
+
 Node *createNode()
 {
     return NULL;
