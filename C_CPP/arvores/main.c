@@ -11,6 +11,7 @@ int main ()
     Node *n1 = createNode();
     Node *n2 = createNode();
 
+    insertNode(&n1, 21);
     getNewNode();
     insertNode(&n1, 22);
   /*

@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     
 
     y = soma(&x, &y);
-    printf("%u", y);
+    printf("%u", y);s
     return 0;
 }
 

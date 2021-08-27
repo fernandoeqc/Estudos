@@ -4,6 +4,7 @@ void getNewNode()
 {
     Node *node = createNode();
     int num;
+    
     scanf("%u", &num);
     printf("O numero digitado foi: %u \n", num);
 
