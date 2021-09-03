@@ -1,29 +1,12 @@
 public class gerenciaContas {
     public static void main(String[] args) {
 
-        Poupanca p1 = new Poupanca();
-        ContaCorrente p2 = new ContaCorrente();
+        Cliente jose = new Cliente("jose", "23049281243");
+        Cliente maria = new Cliente("maria", "25676281233");
+        Cliente joao = new Cliente("joao", "74349281343");
 
-        p1.setNomeCliente("João");
-        p1.setSaldoIncial(1000);
-        p2.setNomeCliente("maria");
-        p2.setSaldoIncial(500);
+        jose.imprimeCadastro();
 
-        System.out.println(p1.getNomeCliente() + " tinha: " + p1.getSaldo());
-        System.out.println(p2.getNomeCliente() + " tinha: " + p2.getSaldo());
-        System.out.println("\n=========================\n");
-
-        System.out.println(p1.getNomeCliente() + " transferiu 200 para " + p2.getNomeCliente() + "\n");
-        p1.transferirPara(p2, 200);
-
-        System.out.println(p1.getNomeCliente() + " agora tem: " + p1.getSaldo());
-        System.out.println(p2.getNomeCliente() + " agora tem: " + p2.getSaldo());
-        System.out.println("\n=========================\n");
-
-        System.out.println(p2.getNomeCliente() + " transferiu 100 para " + p1.getNomeCliente() + "\n");
-        p2.transferirPara(p1, 100);
-
-        System.out.println(p1.getNomeCliente() + " agora tem: " + p1.getSaldo());
-        System.out.println(p2.getNomeCliente() + " agora tem: " + p2.getSaldo());
+        System.out.println(Cliente.getId());
     }
 }

@@ -1,3 +1,4 @@
+
 #ignora 
 *.json
 *.exe
@@ -6,3 +7,7 @@
 #C-C++
 \build
 \flutter
+
+#java
+*.class
+

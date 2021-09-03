@@ -1,4 +1,4 @@
-abstract class Conta {
+public class Conta {
     private String nomeCliente;
     private double saldo;
 
@@ -24,7 +24,5 @@ abstract class Conta {
 
     public void deposita(double depositar) {
         saldo += depositar;
-    }
-
-    abstract void imprimeExtrato();
+    } 
 }
