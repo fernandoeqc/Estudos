@@ -8,7 +8,9 @@ public class ContaCorrente extends Conta implements Transferencia {
     @Override
     public void transferirPara(Conta conta, double valor) {
         saca(valor * 1.05);
-        System.out.println("*** Taxa de transferência de 5% ***");
         conta.deposita(valor);
+        System.out.println(this.nome + " transferiu para " + conta.nome + " " + valor);
+        System.out.println("*** Taxa de transferência de 5% ***");
+
     }
 }

@@ -8,7 +8,8 @@ public class Poupanca extends Conta implements Transferencia {
     @Override
     public void transferirPara(Conta conta, double valor) {
         saca(valor * 1.1);
-        System.out.println("*** Taxa de transferência de 10% ***");
         conta.deposita(valor);
+        System.out.println(this.nome + " transferiu para " + conta.nome + " " + valor);
+        System.out.println("*** Taxa de transferência de 10% ***");
     }
 }

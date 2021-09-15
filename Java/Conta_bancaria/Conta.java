@@ -1,20 +1,13 @@
-abstract class Conta {
-    private String nomeCliente;
+abstract class Conta{
+    public Cliente titular = new Cliente();
     private double saldo;
-
-    public String getNomeCliente() {
-        return nomeCliente;
-    }
-
-    public void setNomeCliente(String nome_cliente) {
-        this.nomeCliente = nome_cliente;
-    }
 
     public void setSaldoIncial(double saldo) {
         this.saldo = saldo;
     }
 
     public double getSaldo() {
+        System.out.println(this.nome + " tem de saldo: " + saldo);
         return saldo;
     }
 
