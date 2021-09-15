@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 abstract class Conta{
     public Cliente titular = new Cliente();
+=======
+public class Conta {
+    private String nomeCliente;
+>>>>>>> 37d30b1a6256b2ce1e6fbc39839cbbf5fb17ba85
     private double saldo;
 
     public void setSaldoIncial(double saldo) {
@@ -17,7 +22,5 @@ abstract class Conta{
 
     public void deposita(double depositar) {
         saldo += depositar;
-    }
-
-    abstract void imprimeExtrato();
+    } 
 }
