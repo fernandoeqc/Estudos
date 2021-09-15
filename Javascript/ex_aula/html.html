@@ -1,0 +1,38 @@
+<html>
+<style>
+</style>
+
+<body>
+  <h3>
+    Cadastro de cursos
+  </h3>
+
+  <div>
+    <form>
+
+      <label for="fname">Nome</label>
+      <input type="text" id="fname" name="nome" placeholder="Seu nome" required>
+
+      <label for="matricula">Matrícula</label>
+      <input type="text" id="matricula" name="matricula" placeholder="Sua matrícula" pattern="[0-9]+$" required>
+
+      <select name="turno" id="turno" required>
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+      </select>
+
+      <select name="curso" id="curso" required>
+        <option value="redes">Redes</option>
+        <option value="engcom">Engenharia da computação</option>
+        <option value="cc">Ciencia da computação</option>
+        <option value="ads">Análise e desenvolvimento de sistemas</option>
+      </select>
+
+      <button id="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+#cad
+{
+    margin: 10px;
+    background-color: #ffffff;
+    width: 400px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #04AA6D
+    
+}
+#formulario
+{
+    text-align: center;
+    margin: 0 auto;
+	width: 40%;
+    align-items: center;
+    
+    position: relative; 
+    margin:50px auto;
+    background: #c6d8be;
+    border-radius: 10px;
+
+    width: 500px;
+    height: 300px;
+}
+
+.rect
+{
+    width: 400px;
+    height: 40px;
+
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 4px;
+}
+
+.button {
+    width: 400px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 30px;
+  }
+  
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+}

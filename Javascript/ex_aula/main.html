@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cursos</title>
+    <link rel="stylesheet" type="text/css" href="stiles.css" />
+
+</head>
+
+
+
+<body>
+    <form id="formulario">
+
+        <div id="cad">
+            <label for="cadastro">CADASTRO DE CURSO</label>
+        </div>
+        <input class="rect" type="text" id="fname" name="nome" placeholder="Seu nome" required>
+
+        <input class="rect" type="text" id="matricula" name="matricula" placeholder="Sua matrícula" pattern="[0-9]+$"
+            required>
+
+        <select class="rect" name="turno" id="turno" required>
+            <option value="" disabled selected>Selecione o turno</option>
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+
+        <select class="rect" name="curso" id="curso" title="ola" required>
+            <option value="" disabled selected>Selecione o curso</option>
+            <option value="redes">Redes</option>
+            <option value="engcom">Engenharia da computação</option>
+            <option value="cc">Ciencia da computação</option>
+            <option value="ads">Análise e desenvolvimento de sistemas</option>
+        </select><br>
+
+        <button class="button">Enviar</button>
+
+    </form>
+</body>
+
+</html>
