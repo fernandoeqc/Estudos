@@ -4,7 +4,12 @@ project(harvard VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-set (SRC_FILES main.c ${CMAKE_CURRENT_SOURCE_DIR}/src/algsort.c) # your source files
+set (
+    SRC_FILES main.c 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/algsort.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/algsearch.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/common.c
+    ) # your source files
 
 add_executable(harvard ${SRC_FILES}) # build executable "sample"
 include_directories("${PROJECT_SOURCE_DIR}/include")
