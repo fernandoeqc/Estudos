@@ -2,9 +2,9 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#include "common.h"
-#include "algsort.h"
-#include "algsearch.h"
+// #include "common.h"
+// #include "algsort.h"
+// #include "algsearch.h"
 
 // int rand_range [] = {5, 4, 3, 2, 1, 6, 10, 7, 8};
 int rand_range [] = {1, 1, 1, 2, 2, 4, 7, 7, 8, 9, 9, 9, 9, 10, 11, 12, 13,
@@ -18,7 +18,8 @@ int main(int argc, char const *argv[])
 {
     // selection_sort (rand_range, sizeof(rand_range));
     // bubble_sort (rand_range, sizeof(rand_range));
-    bubble_sort (rand_range, sizeof(rand_range)/4);
-    print_vector (rand_range, sizeof(rand_range)/4);
+    // bubble_sort (rand_range, sizeof(rand_range)/4);
+    // print_vector (rand_range, sizeof(rand_range)/4);
+    printf("hello");
     return 0;
 }

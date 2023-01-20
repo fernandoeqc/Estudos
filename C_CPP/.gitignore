@@ -1,1 +1,10 @@
-*.code-workspace
+*
+!*/
+
+**/build/
+**/CMakeFiles/
+
+!*/CMakeLists.txt
+!*.cpp
+!*.c
+!*.h
